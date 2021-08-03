@@ -48,6 +48,7 @@ const FormComp = () => {
                 render={({ field, fieldState: { error } }) => {
                     return (
                         <Form.Item
+                            label={label}
                             validateStatus={error ? 'error' : ''}
                             help={error ? error.message : ''}
                             hasFeedback
@@ -70,6 +71,7 @@ const FormComp = () => {
                 render={({ field, fieldState: { error } }) => {
                     return (
                         <Form.Item
+                            label={label}
                             validateStatus={error ? 'error' : ''}
                             help={error ? error.message : ''}
                             hasFeedback
@@ -92,6 +94,7 @@ const FormComp = () => {
                 render={({ field, fieldState: { error } }) => {
                     return (
                         <Form.Item
+                            label={label}
                             validateStatus={error ? 'error' : ''}
                             help={error ? error.message : ''}
                         >
@@ -110,6 +113,7 @@ const FormComp = () => {
         <Form
             onFinish={register.handleSubmit(onSubmit)}
             className='form'
+            layout='vertical'
         >
             <section>
                 <Row align="top" gutter={[10, 10]}>
