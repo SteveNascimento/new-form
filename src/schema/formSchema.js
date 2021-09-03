@@ -1,8 +1,10 @@
 import * as Yup from 'yup'
 
 export const validationSchema = Yup.object().shape({
-    matricula: Yup.string().required('Obrigatório'),
-    /* nome_social: Yup.string().required('Obrigatório'),
+    data_matricula: Yup.string().required('Obrigatório').typeError('Obrigatório'),
+    mobile: Yup.string(),
+    /* matricula: Yup.string().required('Obrigatório'),
+    nome_social: Yup.string().required('Obrigatório'),
     nome_cracha: Yup.string().required('Obrigatório'),
     vinculo: Yup.string().required('Obrigatório'),
     cargo: Yup.string().required('Obrigatório'),
